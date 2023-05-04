@@ -63,3 +63,12 @@ git checkout [branch_name]
 
 buoc 2: re nhanh moi tu nhanh dang dung
 git checkout -b [branch_name]
+
+## Tao pull request (merge request)
+
+
+## xoa 1 nhanh tren local
+* Phải đứng trên 1 nhánh khác để xóa 
+git branch -d [branch_name]
+git branch -D [branch_name]
+
