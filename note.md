@@ -9,10 +9,10 @@
   - upload code
 
 # thao tac voi 1 repository
-  1. link đến một repo nào đấy (làm 1 lần duy nhất)
+  Bước 0: link đến một repo nào đấy (làm 1 lần duy nhất)
   git remote add origin [origin-url]
 
-  2. khai bao sẽ upload những gì lên
+  Bước 1: khai bao sẽ upload những gì lên
 
   //kiem tra trạng thái code
   git status
@@ -27,7 +27,39 @@
   git reset [options]
   git reset [path]
 
-  3. khai bao là mình đã làm những gì (vd: tao header cho homepage)
+  Bước 2: khai bao là mình đã làm những gì (vd: tao header cho homepage)
   git commit -m [message]
 
-  4. upload code lên
+  Bước 3: Khi bị conflict
+  - download code tren repo ve may, va chọn xem là nội dung nào mới là đúng
+  git pull origin [branch_name]
+  giai quyet conflict (resolve conflict)
+  add phan vua resolve vao, sau do commit mot lan nua
+
+  Bước 4: upload code lên
+  git push origin [branch_name]
+
+  ## cau lenh thay the cho pull
+  -download code moi ve
+  -merge code moi vao local
+
+  ## fetch
+  download code moi tu origin ve
+  git fetch origin [branch_name]
+
+  ## merge
+  git merge [branch_A] [branch_B]
+
+  origin origin/main
+  local main
+
+  git merge origin/main main
+  git merge origin/main
+
+
+## Tao 1 nhanh moi
+buoc 1: di den nhanh muon lam node goc
+git checkout [branch_name]
+
+buoc 2: re nhanh moi tu nhanh dang dung
+git checkout -b [branch_name]
